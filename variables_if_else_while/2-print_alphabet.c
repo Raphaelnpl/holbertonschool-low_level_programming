@@ -4,12 +4,14 @@
 
 /* Return: Always 0 (Success) */
 
-int main()
+	int main(void)
+
 {
 	char c = 'a';
 	do {
-	 putchar(c++);
+
+	putchar(c++);
 	} while (c <= 'z');
-	putchar('\n');
-	return 0;
+	putchar('\n')
+	return(0);
 }
