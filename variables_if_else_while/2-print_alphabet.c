@@ -6,7 +6,10 @@
 
 int main()
 {
-	putchar('a' + ('z' - 'a') / 2 + 1);
+	char c = 'a';
+	do {
+	 putchar(c++);
+	} while (c <= 'z');
 	putchar('\n');
 	return 0;
 }
