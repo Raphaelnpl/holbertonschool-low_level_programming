@@ -6,8 +6,7 @@
 
 int main()
 {
-	putchar('a');
-	putchar('z' + 1);
+	putchar('a' + ('z' - 'a') / 2 + 1);
 	putchar('\n');
 	return 0;
 }
