@@ -1,17 +1,22 @@
+#include <stdlib.h>
+#include <time.h>
+/* more headers goes there */
 #include <stdio.h>
-
-/* main - Entry point */
-
-/* Return: Always 0 (Success) */
-
-	int main(void)
-
+/**
+ * main - Prints the alphabet in lowercase.
+ *
+ * Return: Always 0 (Success)
+ */
+/* betty style doc for function main goes there */
+int main(void)
 {
-	char c = 'a';
-	do {
+	char letter = 'a';
 
-	putchar(c++);
-	} while (c <= 'z');
-	putchar('\n')
-	return(0);
+	while (letter <= 'z')
+	{
+		putchar(letter);
+		letter++;
+	}
+	putchar('\n');
+	return (0);
 }
