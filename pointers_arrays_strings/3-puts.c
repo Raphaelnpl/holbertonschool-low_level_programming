@@ -1,29 +1,16 @@
-#include <stdlib.h>
-#include <time.h>
-/* more headers goes there */
-#include <stdio.h>
+#include "main.h"
+
 /**
- * main - Prints the alphabet in lowercase, and then in uppercase.
- *
- * Return: Always 0 (Success)
+ * _puts - prints a string to stdout
+ * @str: pointer to the string to print
  */
-/* betty style doc for function main goes there */
-int main(void)
+void _puts(char *str)
 {
-	char lowercase_letter = 'a';
-	char upercase_letter = 'A';
+	int i;
 
-	while (lowercase_letter <= 'z')
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		putchar(lowercase_letter);
-		lowercase_letter++;
+		_putchar(str[i]);
 	}
-	while (upercase_letter <= 'Z')
-	{
-		putchar(upercase_letter);
-		upercase_letter++;
-
-	}
-	putchar('\n');
-	return (0);
+	_putchar('\n');
 }
