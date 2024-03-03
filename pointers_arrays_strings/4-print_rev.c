@@ -1,24 +1,26 @@
-#include <stdlib.h>
-#include <time.h>
-/* more headers goes there */
-#include <stdio.h>
+#include "main.h"
+
 /**
- * main - Prints the alphabet in lowercase except q and e.
- *
- * Return: Always 0 (Success)
+ * print_rev - prints a string in reverse, followed by a new line
+ * @s: string to be printed
  */
-/* betty style doc for function main goes there */
 void print_rev(char *s)
 {
-	char letter = 'a';
+	int i, j, len;
 
-	while (letter <= 'z')
+	i = 0;
+
+	while (s[i] != '\0')
 	{
-		if (letter != 'e' && letter != 'q')
-		{
-		putchar(letter);
-		}
-		letter++;
+		i++;
 	}
-	putchar('\n');
+
+	len = i;
+
+	for (j = len - 1; j >= 0; j--)
+	{
+		_putchar(s[j]);
+	}
+
+	_putchar('\n');
 }
