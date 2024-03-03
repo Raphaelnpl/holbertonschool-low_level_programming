@@ -3,27 +3,22 @@
 /* more headers goes there */
 #include <stdio.h>
 /**
- * main - Prints the alphabet in lowercase, and then in uppercase.
+ * main - Prints the alphabet in lowercase except q and e.
  *
  * Return: Always 0 (Success)
  */
 /* betty style doc for function main goes there */
-void print_rev(char *s);
+void print_rev(char *s)
 {
-	char lowercase_letter = 'a';
-	char upercase_letter = 'A';
+	char letter = 'a';
 
-	while (lowercase_letter <= 'z')
+	while (letter <= 'z')
 	{
-		putchar(lowercase_letter);
-		lowercase_letter++;
-	}
-	while (upercase_letter <= 'Z')
-	{
-		putchar(upercase_letter);
-		upercase_letter++;
-
+		if (letter != 'e' && letter != 'q')
+		{
+		putchar(letter);
+		}
+		letter++;
 	}
 	putchar('\n');
-	return (0);
 }
