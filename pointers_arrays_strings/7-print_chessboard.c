@@ -1,18 +1,17 @@
 #include "main.h"
 
 /**
- * print_chessboard - check the code
- *
- * @a : ar
+ * print_chessboard - prints a chessboard
+ * @a: array
  */
 void print_chessboard(char (*a)[8])
 {
-	int z, p;
-	for (z = 0; z < 8; z++)
+	int x, y;
+	for (x = 0; x < 8; x++)
 	{
-		for (p = 0; p < 0; p++)
+		for (y = 0; y < 8; y++)
 		{
-			_putchar (a[z][p]);
+			_putchar(a[x][y]);
 		}
 		_putchar('\n');
 	}
