@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -9,40 +8,25 @@
  *
  * Return: Nothing
  */
-void simple_print_buffer(char *buffer, unsigned int size){
+char *create_array(unsigned int size, char c)
+{
+	char *str;
 	unsigned int i;
 
-	i = 0;
-	while (i < size)
+	if (size == 0)
 	{
-	if (i % 10)
-	printf(" ");
-	if (!(i % 10) && i)
-	printf("\n");
-	printf("0x%02x", buffer[i]);
-	i++;
-}
-	printf("\n");
-}
-
-int main(void)
-{
-	char *buffer;
-
-	buffer = (char *)malloc(sizeof(char) * 98);
-	if (buffer == 0)
-	{
-		printf("Failed to allocate memory\n");
-		 return (1);
+		return (NULL);
 	}
-	for (int i = 0; i < 98; i++)
-		{
-			buffer[i] = 'H';
-		}
+	str = malloc(size * sizeof(char));
 
-		simple_print_buffer(buffer, 98);
-
-		free(buffer);
-
-		return (0);
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+	
+	for (i = 0; i < size; i++)
+	{
+		str[i] = c ;
+	}
+	return (str);
 }
