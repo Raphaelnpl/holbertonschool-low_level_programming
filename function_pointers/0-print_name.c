@@ -6,8 +6,9 @@
  * @name: Le nom à imprimer
  * @f: Un pointeur vers la fonction d'impression à utiliser
  */
-
+#include "main.h"
 #include "function_pointers.h"
+
 
 void print_name(char *name, void (*f)(char *))
 {
