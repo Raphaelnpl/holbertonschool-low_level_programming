@@ -1,4 +1,3 @@
-int main(void)
 void print_name_as_is(char *name);
 int _putchar(char c);
 void print_name_uppercase(char *name);
