@@ -1,20 +1,19 @@
 #include "main.h"
 #include "function_pointers.h"
 
-
 /**
- * print_hello - Prints "Hello, Betty!" to the standard output
- * @name :
- * @f :
+ * print_name - Imprime le nom en utilisant une fonction spécifiée
+ * @name: Le nom à imprimer
+ * @f: Un pointeur vers la fonction d'impression à utiliser
  */
 void print_name(char *name, void (*f)(char *))
 {
-	if (f != 0)
-	{
-		f((name));
-	}
-	else
-	{
-		return;
-	}
+        if (f != 0)
+        {
+                f(name);
+        }
+        else
+        {
+                return;
+        }
 }
