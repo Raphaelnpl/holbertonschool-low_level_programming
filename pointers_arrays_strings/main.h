@@ -20,5 +20,6 @@ char *_strncpy(char *dest, const char *src, int n);
 int _strcmp(char *s1,const char *s2);
 void reverse_array(int *a, int n);
 char *string_toupper(char *);
+char *cap_string(char *);
 
 #endif /* MAIN_H */
