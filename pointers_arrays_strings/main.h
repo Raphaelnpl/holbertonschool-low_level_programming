@@ -15,5 +15,7 @@ int _putchar(char c);
 void rev_string(char *s);
 char *_strcat(char *dest, const char *src);
 char *_strncat(char *dest, const char *src, int n);
+char *_strncpy(char *dest, const char *src, int n);
+char *_strncpy(char *dest, const char *src, int n);
 
 #endif /* MAIN_H */
