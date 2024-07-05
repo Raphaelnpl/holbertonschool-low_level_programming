@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
- * factorial - check the code
- *@n : r
- * return: n
+ * factorial - calculates the factorial of a given number
+ * @n: the number to calculate the factorial for
+ *
+ * Return: the factorial of n if n is non-negative,
+ *         or -1 if n is negative to indicate an error
  */
 int factorial(int n)
 {
