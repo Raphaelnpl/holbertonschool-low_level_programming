@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- * simple_print_buffer - prints buffer in hexadecimal format
- * @buffer: pointer to the memory to print
- * @size: size of the memory to print
+ * create_array - creates an array of chars, and initializes it with a specific char
+ * @size: size of the array
+ * @c: char to initialize the array with
  *
- * Return: Nothing
+ * Return: pointer to the array, or NULL if it fails
  */
 char *create_array(unsigned int size, char c)
 {
