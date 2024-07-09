@@ -2,10 +2,11 @@
 #include <stdlib.h>
 
 /**
- * str_concat - 
- * @s1: 
- * @s2: 
- * Return: 
+ * str_concat - Concatenate two strings.
+ * @s1: The first string.
+ * @s2: The second string.
+ * Return: Pointer to the newly allocated space in memory
+ * containing the concatenated string, or NULL if it fails.
  */
 
 char *str_concat(char *s1, char *s2)
