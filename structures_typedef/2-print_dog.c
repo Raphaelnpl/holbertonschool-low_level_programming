@@ -1,6 +1,14 @@
 #include <stdio.h>
 #include "dog.h"
 
+/**
+ * print_dog - Prints the details of a dog.
+ * @d: The dog structure to be printed.
+ *
+ * Description: This function prints the details of a dog structure,
+ *              including the dog's name, age, and owner. If any of the
+ *              elements of the structure are NULL, it prints (nil) instead.
+ */
 void print_dog(struct dog *d)
 {
 	if (d != NULL)
