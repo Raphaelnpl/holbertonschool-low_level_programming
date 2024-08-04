@@ -7,6 +7,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 
-int append_text_to_file(const char *filename, char *text_content);
+/* Function prototypes */
+void error_exit(int code, const char *message, const char *file);
 
 #endif /* MAIN_H */
